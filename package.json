@@ -1,0 +1,14 @@
+{
+  "name": "osakaanime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix osaka-backend\" \"npm run dev --prefix osaka-frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
