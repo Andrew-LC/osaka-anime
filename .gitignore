@@ -51,6 +51,7 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 *.tscache
+.env
 
 # Next.js
 .next/

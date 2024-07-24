@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Osaka Anime",
-  description: "A Anime streaming platform",
+  title: "Gym Management",
+  description: "A gym management app",
 };
 
 export default function RootLayout({
