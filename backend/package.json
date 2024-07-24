@@ -5,9 +5,11 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.12.0",
+    "@supabase/supabase-js": "^2.44.4",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.32.1",
-    "hono": "^4.5.1"
+    "hono": "^4.5.1",
+    "postgres": "^3.4.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

@@ -63,6 +63,7 @@ tailwind.config.js
 
 # Ignore the build output of frontend and backend
 osaka-backend/dist/
+osaka-backend/drizzle/
 osaka-frontend/.next/
 osaka-frontend/out/
 
