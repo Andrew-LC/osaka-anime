@@ -4,8 +4,6 @@ import postgres from 'postgres';
 
 config({ path: '.env' });
 
-const connectionString = process.env.DATABASE_URL
+const client = postgres(process.env.DATABASE_URL!);
+export const db = drizzle(client);
 
-// Disable prefetch as it is not supported for "Transaction" pool mode
-const client = postgres(connectionString, { prepare: false })
-const db = drizzle(client);
