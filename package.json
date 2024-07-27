@@ -10,5 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.18",
+    "tailwind-merge": "^2.4.0"
   }
 }

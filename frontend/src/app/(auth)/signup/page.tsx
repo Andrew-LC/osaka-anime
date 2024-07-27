@@ -56,7 +56,7 @@ export default function SignUp() {
     }
 
     return (
-        <Card className="bg-[#1f1f1f] text-white w-[500px] p-4">
+        <Card className="dark:bg-black dark:text-white md:w-[500px] p-4">
             <CardHeader>
                 <CardTitle className="text-center">Signup</CardTitle>
             </CardHeader>
@@ -70,9 +70,9 @@ export default function SignUp() {
                                 name={label.toLowerCase()}
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>{label}</FormLabel>
+                                        <FormLabel className="font-bold text-lg">{label}</FormLabel>
                                         <FormControl>
-                                            <Input className="bg-black text-white" {...field} placeholder={label.toLowerCase()} />
+                                            <Input className="bg-[rgb(39, 39, 42)]" {...field} placeholder={label.toLowerCase()} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -84,10 +84,10 @@ export default function SignUp() {
                             name="role"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Role</FormLabel>
+                                    <FormLabel className="font-bold text-lg">Role</FormLabel>
                                     <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                        <FormControl className="bg-black">
-                                            <SelectTrigger>
+                                        <FormControl>
+                                            <SelectTrigger className="bg-[rgb(39, 39, 42)]">
                                                 <SelectValue placeholder="Select role" />
                                             </SelectTrigger>
                                         </FormControl>
@@ -105,15 +105,15 @@ export default function SignUp() {
                             name="password"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Password</FormLabel>
+                                    <FormLabel className="font-bold text-lg">Password</FormLabel>
                                     <FormControl>
-                                        <Input className="bg-black" {...field} type="password" placeholder="Password" />
+                                        <Input className="bg-[rgb(39, 39, 42)]" {...field} type="password" placeholder="Password" />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button className="bg-white text-black font-bold" type="submit">Sign Up</Button>
+                        <Button className="dark:bg-white dark:text-black font-bold" type="submit">Sign Up</Button>
                     </form>
                 </Form>
             </CardContent>
