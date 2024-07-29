@@ -11,7 +11,8 @@ import Image from "next/image";
 export default function Home() {
     return (
         <main className="bg-black flex flex-col min-h-[100dvh]">
-            <header className="fixed z-[100] w-full bg-black bg-opacity-30 backdrop-blur-lg shadow-lg text-primary-foreground py-4 px-6 flex items-center justify-between">
+            <header className="fixed z-[100] w-full bg-black bg-opacity-30 backdrop-blur-lg shadow-lg
+			     text-primary-foreground py-4 px-6 flex items-center justify-between">
                 <Link href="#" className="flex items-center gap-2" prefetch={false}>
                     <Dumbbell className="h-8 w-8" />
                     <span className="text-xl font-bold">Fitness Hub</span>
@@ -36,6 +37,11 @@ export default function Home() {
                         Login
                     </Link>
                 </nav>
+                <Button className="ml-[9rem] border border-white">
+                    <Link href="/dashboard">
+                        Dashboard
+                    </Link>
+                </Button>
                 <button className="md:hidden">
                     <Menu className="h-6 w-6" />
                 </button>
